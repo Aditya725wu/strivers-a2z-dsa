@@ -182,7 +182,7 @@ void pattern16(int n){
         while(t--){
             int n;
             cin>>n;
-            pattern15(n);
+            pattern16(n);
         }
 
         }
