@@ -1,0 +1,114 @@
+/*
+==========================================
+           QUEUE IN C++ STL
+==========================================
+
+Definition:
+A queue is a linear data structure that follows
+the FIFO (First In, First Out) principle.
+
+FIFO means:
+- The element inserted FIRST is removed FIRST.
+- Insertion happens at the BACK (rear).
+- Deletion happens from the FRONT.
+
+Real-life examples:
+- People standing in a ticket counter line
+- Printer job scheduling
+- Customer service waiting lines
+
+Example:
+
+Step 1: q.push(9);
+
+Front/Back
+    ↓
+   [9]
+
+Step 2: q.push(4);
+
+Front      Back
+  ↓          ↓
+ [9] [4]
+
+Step 3: q.push(5);
+
+Front          Back
+  ↓              ↓
+ [9] [4] [5]
+
+Step 4: q.pop();
+
+9 is removed because it was inserted first.
+
+Front      Back
+  ↓          ↓
+ [4] [5]
+
+Important:
+- Queue does NOT allow random access like q[0]
+- Queue does NOT support iterators
+- Use front() to access the first element
+- Use back() to access the last element
+
+Header file: #include <queue>
+
+Declaration:
+queue<dataType> queueName;
+
+Example:
+queue<int> q;
+*/
+
+#include <iostream>   // For cout and endl
+#include <queue>      // For queue STL container
+
+using namespace std;
+
+int main() {
+
+    // Create a queue of integers
+    queue<int> q;
+
+    // Insert elements at the BACK of the queue
+  
+    q.push(9);   // Queue: [9]
+    q.push(4);   // Queue: [9, 4]
+    q.push(5);   // Queue: [9, 4, 5]
+    q.push(6);   // Queue: [9, 4, 5, 6]
+    q.push(7);   // Queue: [9, 4, 5, 6, 7]
+
+    // emplace() constructs the element directly
+    // inside the queue
+    q.emplace(8); // Queue: [9, 4, 5, 6, 7, 8]
+
+    cout << "Current front element: " << q.front() << endl;
+    cout << "Current back element: " << q.back() << endl;
+
+    // pop() removes the FRONT element
+    // It does not return the removed value
+
+    q.pop(); // Removes 9
+
+    // Queue after pop(): [4, 5, 6, 7, 8]
+
+    cout << "\nAfter pop():" << endl;
+
+    // Access the first element
+    cout << "Front element: " << q.front() << endl;
+
+    // Access the last element
+    cout << "Back element: " << q.back() << endl;
+
+    // Total number of elements
+    cout << "Queue size: " << q.size() << endl;
+
+    // Check if queue is empty
+    if (q.empty()) {
+        cout << "Queue is empty" << endl;
+    } else {
+        cout << "Queue is not empty" << endl;
+    }
+
+    return 0;
+}

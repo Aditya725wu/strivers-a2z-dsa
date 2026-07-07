@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA/Learn the basics/STL(Standard Template Library)/Libraries",
-      "program": "d:/DSA/Learn the basics/STL(Standard Template Library)/Libraries/build/Debug/outDebug",
+      "cwd": "d:/DSA/Learn the basics/Math1",
+      "program": "d:/DSA/Learn the basics/Math1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

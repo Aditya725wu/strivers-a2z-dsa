@@ -1,0 +1,17 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+
+
+    int n;
+    cout<<"ENter a number";
+    coin>>n;
+
+    while(n!=0){
+
+        int rem=n%10;
+        cout<<rem;
+        n=n/10;
+    }
+}
