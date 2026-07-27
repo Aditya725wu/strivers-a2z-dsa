@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA/Learn the basics/Recursion",
-      "program": "d:/DSA/Learn the basics/Recursion/build/Debug/outDebug",
+      "cwd": "d:/DSA/Linkedlist",
+      "program": "d:/DSA/Linkedlist/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
